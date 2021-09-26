@@ -19,10 +19,12 @@ body {
 .container {
     display: flex;
     /* border: 2px solid brown; */
+    border-radius: 500px;
     height: 15em;
     width: 15em;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease-out;
 }
 
 .dots {
@@ -30,28 +32,34 @@ body {
     background: whitesmoke;
     height: 1rem;
     width: 1rem;
+    margin: 0px auto;
     border-radius: 10px;
+    transition: all 1s ease-out;
+}
+
+.container:hover .dots {
     margin: 0px auto;
     transition: all 1s ease;
 }
 
-#dot1 {
+.container:hover #dot1 {
     animation: dot1 2s infinite;
 }
 
-#dot5 {
+.container:hover #dot5 {
     animation: dot5 2s infinite;
 }
 
-#dot2 {
+.container:hover #dot2 {
     animation: dot2 2s infinite;
 }
 
-#dot4 {
+.container:hover #dot4 {
     animation: dot4 2s infinite;
 }
 
-.container {
+.container:hover {
+    /* box-shadow: 0px 1px 2px 2.5px rgba(102, 102, 102, 0.493); */
     animation: dot 4s infinite;
 }
 
